@@ -18,8 +18,43 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_history"
         android:name="com.kamiki.saboapp.ui.history.HistoryFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.kamiki.saboapp.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/addCameraFragment"
+        android:name="com.kamiki.saboapp.ui.addcamera.AddCameraFragment"
+        android:label="fragment_add_camera"
+        tools:layout="@layout/fragment_add_camera" />
+    <activity
+        android:id="@+id/detailActivity"
+        android:name="com.kamiki.saboapp.ui.DetailActivity"
+        android:label="activity_detail2"
+        tools:layout="@layout/activity_detail2" />
+    <activity
+        android:id="@+id/loginActivity2"
+        android:name="com.kamiki.saboapp.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/registerActivity"
+        android:name="com.kamiki.saboapp.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+    <activity
+        android:id="@+id/splashScreen"
+        android:name="com.kamiki.saboapp.SplashScreen"
+        android:label="activity_splash_screen"
+        tools:layout="@layout/activity_splash_screen" />
+    <activity
+        android:id="@+id/welcomeActivity"
+        android:name="com.kamiki.saboapp.WelcomeActivity"
+        android:label="activity_welcome"
+        tools:layout="@layout/activity_welcome" />
 </navigation>
