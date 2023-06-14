@@ -8,7 +8,9 @@ import android.view.View
 import android.view.animation.TranslateAnimation
 import androidx.activity.OnBackPressedCallback
 import com.kamiki.saboapp.admin.LoginActivity
+import com.kamiki.saboapp.admin.MainActivity2
 import com.kamiki.saboapp.databinding.ActivityWelcomeBinding
+import com.kamiki.saboapp.user.UserActivity
 
 class WelcomeActivity : AppCompatActivity(), View.OnClickListener{
 
@@ -38,12 +40,12 @@ class WelcomeActivity : AppCompatActivity(), View.OnClickListener{
     override fun onClick(v: View) {
         when(v.id) {
             R.id.btn_admin -> {
-                val adminIntent = Intent(this@WelcomeActivity, LoginActivity::class.java)
+                val adminIntent = Intent(this@WelcomeActivity, MainActivity2::class.java)
                 startActivity(adminIntent)
                 finish()
             }
             R.id.btn_user -> {
-                val userIntent = Intent(this@WelcomeActivity, LoginActivity::class.java)
+                val userIntent = Intent(this@WelcomeActivity, UserActivity::class.java)
                 startActivity(userIntent)
                 finish()
             }
