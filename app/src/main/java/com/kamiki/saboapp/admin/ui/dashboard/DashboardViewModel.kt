@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui.dashboard
+package com.kamiki.saboapp.admin.ui.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui.history
+package com.kamiki.saboapp.admin.ui.history
 
 import android.os.Bundle
 import android.view.LayoutInflater

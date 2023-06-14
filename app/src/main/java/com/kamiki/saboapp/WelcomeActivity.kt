@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.view.animation.TranslateAnimation
 import androidx.activity.OnBackPressedCallback
+import com.kamiki.saboapp.admin.LoginActivity
 import com.kamiki.saboapp.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity(), View.OnClickListener{

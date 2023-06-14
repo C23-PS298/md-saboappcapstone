@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui.addcamera
+package com.kamiki.saboapp.admin.ui.addcamera
 
 import androidx.lifecycle.ViewModel
 

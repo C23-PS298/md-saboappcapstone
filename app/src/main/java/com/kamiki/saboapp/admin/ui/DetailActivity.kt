@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui
+package com.kamiki.saboapp.admin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

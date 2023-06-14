@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui.home
+package com.kamiki.saboapp.admin.ui.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.kamiki.saboapp.R
 import com.kamiki.saboapp.databinding.FragmentHomeBinding
-import com.kamiki.saboapp.ui.addcamera.AddCameraFragment
+import com.kamiki.saboapp.admin.ui.addcamera.AddCameraFragment
 
 class HomeFragment : Fragment(), View.OnClickListener {
 

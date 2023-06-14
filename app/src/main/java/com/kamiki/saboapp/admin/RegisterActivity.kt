@@ -1,9 +1,10 @@
-package com.kamiki.saboapp
+package com.kamiki.saboapp.admin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.kamiki.saboapp.R
 import com.kamiki.saboapp.databinding.ActivityRegisterBinding
 
 class RegisterActivity : AppCompatActivity(), View.OnClickListener {

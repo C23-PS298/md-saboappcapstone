@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui.dashboard
+package com.kamiki.saboapp.admin.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

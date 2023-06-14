@@ -7,44 +7,44 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.kamiki.saboapp.ui.home.HomeFragment"
+        android:name="com.kamiki.saboapp.admin.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.kamiki.saboapp.ui.dashboard.DashboardFragment"
+        android:name="com.kamiki.saboapp.admin.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
         android:id="@+id/navigation_history"
-        android:name="com.kamiki.saboapp.ui.history.HistoryFragment"
+        android:name="com.kamiki.saboapp.admin.ui.history.HistoryFragment"
         android:label="@string/title_history"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/navigation_profile"
-        android:name="com.kamiki.saboapp.ui.profile.ProfileFragment"
+        android:name="com.kamiki.saboapp.admin.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/addCameraFragment"
-        android:name="com.kamiki.saboapp.ui.addcamera.AddCameraFragment"
+        android:name="com.kamiki.saboapp.admin.ui.addcamera.AddCameraFragment"
         android:label="fragment_add_camera"
         tools:layout="@layout/fragment_add_camera" />
     <activity
         android:id="@+id/detailActivity"
-        android:name="com.kamiki.saboapp.ui.DetailActivity"
+        android:name="com.kamiki.saboapp.admin.ui.DetailActivity"
         android:label="activity_detail2"
         tools:layout="@layout/activity_detail2" />
     <activity
         android:id="@+id/loginActivity2"
-        android:name="com.kamiki.saboapp.LoginActivity"
+        android:name="com.kamiki.saboapp.admin.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
     <activity
         android:id="@+id/registerActivity"
-        android:name="com.kamiki.saboapp.RegisterActivity"
+        android:name="com.kamiki.saboapp.admin.RegisterActivity"
         android:label="activity_register"
         tools:layout="@layout/activity_register" />
     <activity

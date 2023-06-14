@@ -1,12 +1,14 @@
-package com.kamiki.saboapp
+package com.kamiki.saboapp.admin
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.OnBackPressedCallback
+import com.kamiki.saboapp.R
+import com.kamiki.saboapp.WelcomeActivity
 import com.kamiki.saboapp.databinding.ActivityLoginBinding
-import com.kamiki.saboapp.ui.home.HomeFragment
+import com.kamiki.saboapp.admin.ui.home.HomeFragment
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityLoginBinding

@@ -1,4 +1,4 @@
-package com.kamiki.saboapp
+package com.kamiki.saboapp.admin
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,8 +11,9 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.kamiki.saboapp.R
 import com.kamiki.saboapp.databinding.ActivityMain2Binding
-import com.kamiki.saboapp.ui.profile.ProfileFragment
+import com.kamiki.saboapp.admin.ui.profile.ProfileFragment
 
 class MainActivity2 : AppCompatActivity() {
 
@@ -33,7 +34,10 @@ class MainActivity2 : AppCompatActivity() {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_history, R.id.navigation_profile
+            R.id.navigation_home,
+            R.id.navigation_dashboard,
+            R.id.navigation_history,
+            R.id.navigation_profile
             ).build()
 
         setupActionBarWithNavController(navController, appBarConfiguration)

@@ -1,4 +1,4 @@
-package com.kamiki.saboapp.ui.profile
+package com.kamiki.saboapp.admin.ui.profile
 
 import androidx.lifecycle.ViewModel
 
