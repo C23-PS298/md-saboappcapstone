@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/loginActivity">
+
+
+    <activity
+        android:name="com.kamiki.saboapp.WelcomeActivity"
+        android:label="activity_welcome"
+        tools:layout="@layout/activity_welcome" />
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.kamiki.saboapp.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:name="com.kamiki.saboapp.RegisterActivity"
+        android:label="activity_register"
+        tools:layout="@layout/activity_register" />
+
+</navigation>

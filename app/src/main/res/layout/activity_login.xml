@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#00FFFFFF"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="@string/sign_in_admin"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_welcoming"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcoming"
+        android:layout_width="213dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/welcome_back_admin_you_have_been_missed"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/emailconstraint"
+        app:layout_constraintEnd_toEndOf="@+id/tv_sign_in"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/tv_sign_in"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sign_in" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="275dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#477ECF"
+        android:text="@string/tv_sign_in_admin"
+        app:layout_constraintEnd_toEndOf="@+id/passconstraint"
+        app:layout_constraintStart_toStartOf="@+id/passconstraint"
+        app:layout_constraintTop_toBottomOf="@+id/passconstraint" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Don't Have an Account?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
+        app:layout_constraintVertical_bias="0.344"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="92dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00FFFFFF"
+        android:text="@string/tv_sign_up_admin"
+        android:textAlignment="viewStart"
+        android:textColor="#334F79"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
+        app:layout_constraintVertical_bias="0.322" />
+
+    <ImageButton
+        android:id="@+id/back_to_welcome"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/ic_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/emailconstraint"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_welcoming"
+        app:layout_constraintStart_toStartOf="@+id/tv_welcoming"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcoming">
+
+        <EditText
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="#E7ECF3"
+            android:ems="10"
+            android:hint="@string/email_admin"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/passconstraint"
+        android:layout_width="278dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/emailconstraint"
+        app:layout_constraintStart_toStartOf="@+id/emailconstraint"
+        app:layout_constraintTop_toBottomOf="@+id/emailconstraint">
+
+        <EditText
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+            android:autofillHints=""
+            android:background="#E7ECF3"
+            android:ems="10"
+            android:hint="@string/password_admin"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
