@@ -9,15 +9,216 @@
     <FrameLayout
         android:id="@+id/total_captured"
         android:layout_width="108dp"
-        android:layout_height="76dp"
-        android:layout_marginStart="24dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="28dp"
         android:layout_marginTop="24dp"
-        android:backgroundTint="@color/blue_3"
         android:background="@drawable/rounded_background_user"
+        android:backgroundTint="@color/blue_3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/total_text"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Total"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/capture_text"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:text="Captured"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/icon_user_captured"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_user_profile">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/angka_captured"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/white">
+        </TextView>
     </FrameLayout>
 
+    <FrameLayout
+        android:id="@+id/normal_user"
+        android:layout_width="108dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_background_user"
+        android:backgroundTint="@color/hijau_user"
+        app:layout_constraintStart_toEndOf="@+id/total_captured"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/nomal_text_user"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Normal"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/icon_user_normal"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_user_profile">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/angka_normal_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/white">
+        </TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/suspect_user"
+        android:layout_width="108dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/rounded_background_user"
+        android:backgroundTint="@color/oren_user"
+        app:layout_constraintStart_toEndOf="@+id/normal_user"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/suspect_text_user"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Suspact"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/icon_suspact_normal"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/ic_user_profile">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/angka_suspact_user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="0"
+            android:textColor="@color/white">
+        </TextView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/realtime_user"
+        android:layout_width="356dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_background_user"
+        android:backgroundTint="#dadfe8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/suspect_user"
+        app:layout_constraintStart_toStartOf="@id/total_captured"
+        app:layout_constraintTop_toBottomOf="@+id/normal_user"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/data_realtime"
+            android:layout_width="58.52dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="OVERVIEW"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="normal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/realtime_user_text"
+            android:layout_width="95dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="REALTIME STATUS"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/result_user"
+        android:layout_width="356dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_background_user"
+        android:backgroundTint="#dadfe8"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/suspect_user"
+        app:layout_constraintStart_toStartOf="@id/total_captured"
+        app:layout_constraintTop_toBottomOf="@+id/realtime_user"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/data_result_user"
+            android:layout_width="58.52dp"
+            android:layout_height="23dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="OVERVIEW"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="normal">
+        </TextView>
+
+        <TextView
+            android:id="@+id/result_user_text"
+            android:layout_width="95dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="25dp"
+            android:text="RESULT STATUS"
+            android:textColor="#000000"
+            android:textSize="10sp"
+            android:textStyle="bold">
+        </TextView>
+    </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar_user"
