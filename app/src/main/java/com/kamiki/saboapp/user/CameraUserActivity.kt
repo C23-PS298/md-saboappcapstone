@@ -4,7 +4,9 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import com.kamiki.saboapp.R
+import com.kamiki.saboapp.WelcomeActivity
 import com.kamiki.saboapp.databinding.ActivityCameraUserBinding
 
 class CameraUserActivity : AppCompatActivity() {
@@ -43,5 +45,21 @@ class CameraUserActivity : AppCompatActivity() {
         return true
     }
 
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId){
+            R.id.menu_notifikasi -> {
+                val intent = Intent(this@CameraUserActivity, NotifikasiUserActivity::class.java)
+                startActivity(intent) //menu setting
+                true
+            }
+            R.id.menu_logout -> {
+                val intent = Intent(this@CameraUserActivity, WelcomeActivity::class.java)
+                startActivity(intent) //menu logout
+                true
+            }
+            else -> false
+        }
+        return super.onOptionsItemSelected(item)
+    }
 }
 
