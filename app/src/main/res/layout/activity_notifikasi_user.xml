@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.NotifikasiUserActivity">
+
+    <TextView
+        android:id="@+id/today_text_user"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="18dp"
+        android:text="Today"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/notifkasi_camera_user"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_user_notifikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/today_text_user">
+
+        <ImageView
+            android:id="@+id/notifikasi_user_logo_red"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/notification_red_error">
+        </ImageView>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="Camera 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="12dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Unable To Recognize Object"
+            android:layout_marginTop="37dp"
+            android:textColor="@color/abu_muda"
+            android:layout_marginStart="66dp">
+        </TextView>
+
+        <TextClock
+            android:id="@+id/time_notifikasi_user_1"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:text="13.22"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="RtlCompat">
+        </TextClock>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/notifkasi_camera_user_2"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_user_notifikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifkasi_camera_user">
+
+        <ImageView
+            android:id="@+id/notifikasi_user_logo_blue"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/notifikiasi_blue">
+        </ImageView>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="Camera 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="12dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="a Person"
+            android:layout_marginTop="37dp"
+            android:textColor="@color/abu_muda"
+            android:layout_marginStart="66dp">
+        </TextView>
+
+        <TextClock
+            android:id="@+id/time_notifikasi_user_2"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:text="10.43"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="RtlCompat">
+        </TextClock>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/notifkasi_camera_user_3"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_user_notifikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifkasi_camera_user_2">
+
+        <ImageView
+            android:id="@+id/notifikasi_blue_camera_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/notifikiasi_blue">
+        </ImageView>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="Camera 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="12dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Motion Detected"
+            android:layout_marginTop="37dp"
+            android:textColor="@color/abu_muda"
+            android:layout_marginStart="66dp">
+        </TextView>
+
+        <TextClock
+            android:id="@+id/time_notifikasi_user_3"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:text="08.30"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="RtlCompat">
+        </TextClock>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/yesterday_text_user"
+        android:layout_width="90dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
+        android:text="Yesterday"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifkasi_camera_user_3">
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/notifkasi_camera_yesterday_user"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_user_notifikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yesterday_text_user">
+
+        <ImageView
+            android:id="@+id/notifikasi_blue_yesterday"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/notifikiasi_blue">
+        </ImageView>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="Camera 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="12dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Motion Detected"
+            android:layout_marginTop="37dp"
+            android:textColor="@color/abu_muda"
+            android:layout_marginStart="66dp">
+        </TextView>
+
+        <TextClock
+            android:id="@+id/time_notifikasi_yesterday"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:text="23.45"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="RtlCompat">
+        </TextClock>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/notifkasi_camera_yesterday_user_2"
+        android:layout_width="358dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_user_notifikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notifkasi_camera_yesterday_user">
+
+        <ImageView
+            android:id="@+id/notifikasi_blue_yesterday_2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/notifikiasi_blue">
+        </ImageView>
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:text="Camera 1"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="12dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="210dp"
+            android:layout_height="20dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="Motion Detected"
+            android:layout_marginTop="37dp"
+            android:textColor="@color/abu_muda"
+            android:layout_marginStart="66dp">
+        </TextView>
+
+        <TextClock
+            android:id="@+id/time_notifikasi_yesterday_2"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:text="22.35"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="RtlCompat">
+        </TextClock>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_bar_user_notifikasi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu_user">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
