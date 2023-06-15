@@ -6,6 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".user.ProfileUserActivity">
 
+    <TextView
+        android:id="@+id/Nama_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </TextView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="360dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/background_user_notifikasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Nama_user">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/avatar_user"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="Avatar">
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <TextView
+            android:id="@+id/Nama_user_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="22dp"
+            android:text="Nama"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/email_user_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="60dp"
+            android:text="Email"
+            android:textColor="@color/abu_tua"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+    </FrameLayout>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation_bar_user_camera"
         android:layout_width="0dp"
@@ -17,4 +75,63 @@
         app:menu="@menu/bottom_nav_menu_user"
         tools:ignore="VisualLintBottomNav">
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout">
+
+        <Switch
+            android:id="@+id/switch1_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="8dp"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck"></Switch>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:gravity=""
+            android:minHeight="48dp"
+            android:text="Drak Mode"
+            android:textStyle="bold"></TextView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+        app:layout_constraintStart_toStartOf="@+id/frameLayout"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <Switch
+            android:id="@+id/switch2_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="6dp"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck">
+        </Switch>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:gravity=""
+            android:minHeight="48dp"
+            android:text="Notifikasi"
+            android:textStyle="bold">
+        </TextView>
+    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
