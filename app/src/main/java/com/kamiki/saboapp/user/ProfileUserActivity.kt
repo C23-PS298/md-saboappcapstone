@@ -8,7 +8,8 @@ import android.view.MenuItem
 import com.kamiki.saboapp.R
 import com.kamiki.saboapp.WelcomeActivity
 import com.kamiki.saboapp.databinding.ActivityProfileUserBinding
-import com.kamiki.saboapp.databinding.ActivityUserBinding
+import com.kamiki.saboapp.user.camera.CameraUserActivity
+import com.kamiki.saboapp.user.notifikasi.NotifikasiUserActivity
 
 class ProfileUserActivity : AppCompatActivity() {
     private lateinit var binding: ActivityProfileUserBinding

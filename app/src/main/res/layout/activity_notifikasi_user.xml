@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".user.NotifikasiUserActivity">
+    tools:context=".user.notifikasi.NotifikasiUserActivity">
 
     <TextView
         android:id="@+id/today_text_user"

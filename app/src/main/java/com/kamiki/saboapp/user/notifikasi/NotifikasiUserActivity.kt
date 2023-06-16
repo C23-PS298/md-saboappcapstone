@@ -1,23 +1,24 @@
-package com.kamiki.saboapp.user
+package com.kamiki.saboapp.user.notifikasi
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
-import android.view.MenuItem
 import com.kamiki.saboapp.R
-import com.kamiki.saboapp.WelcomeActivity
-import com.kamiki.saboapp.databinding.ActivityCameraUserBinding
+import com.kamiki.saboapp.databinding.ActivityNotifikasiUserBinding
+import com.kamiki.saboapp.user.ProfileUserActivity
+import com.kamiki.saboapp.user.UserActivity
+import com.kamiki.saboapp.user.camera.CameraUserActivity
 
-class CameraUserActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityCameraUserBinding
+class NotifikasiUserActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityNotifikasiUserBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityCameraUserBinding.inflate(layoutInflater)
+        binding = ActivityNotifikasiUserBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.navigationBarUserCamera.setOnNavigationItemSelectedListener { item ->
+        binding.navigationBarUserNotifikasi.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.navigation_dashboard -> {
                     // Navigasi ke tujuan Dashboard
@@ -44,22 +45,4 @@ class CameraUserActivity : AppCompatActivity() {
         inflater.inflate(R.menu.option_menu_user, menu)
         return true
     }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            R.id.menu_notifikasi -> {
-                val intent = Intent(this@CameraUserActivity, NotifikasiUserActivity::class.java)
-                startActivity(intent) //menu setting
-                true
-            }
-            R.id.menu_logout -> {
-                val intent = Intent(this@CameraUserActivity, WelcomeActivity::class.java)
-                startActivity(intent) //menu logout
-                true
-            }
-            else -> false
-        }
-        return super.onOptionsItemSelected(item)
-    }
 }
-

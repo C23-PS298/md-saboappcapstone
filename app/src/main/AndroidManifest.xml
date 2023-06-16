@@ -14,13 +14,13 @@
         android:theme="@style/Theme.Saboapp"
         tools:targetApi="31">
         <activity
-            android:name=".user.NotifikasiUserActivity"
+            android:name=".user.notifikasi.NotifikasiUserActivity"
             android:exported="false" />
         <activity
             android:name=".user.ProfileUserActivity"
             android:exported="false" />
         <activity
-            android:name=".user.CameraUserActivity"
+            android:name=".user.camera.CameraUserActivity"
             android:exported="false" />
         <activity
             android:name=".user.UserActivity"

@@ -6,12 +6,11 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import androidx.navigation.NavController
-import androidx.navigation.Navigation
-import androidx.navigation.ui.NavigationUI
 import com.kamiki.saboapp.R
 import com.kamiki.saboapp.WelcomeActivity
-import com.kamiki.saboapp.admin.ui.profile.ProfileFragment
 import com.kamiki.saboapp.databinding.ActivityUserBinding
+import com.kamiki.saboapp.user.camera.CameraUserActivity
+import com.kamiki.saboapp.user.notifikasi.NotifikasiUserActivity
 
 class UserActivity : AppCompatActivity() {
     private lateinit var binding: ActivityUserBinding
